@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a1a1a; /* Dark Background */
+    color: #e0e0e0;            /* Light Text */
+    font-family: 'Inter', sans-serif; /* Clean Sans-serif font */
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* Links */
+a {
+    color: #64b5f6; /* Light Blue for contrast */
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #9be7ff;
+    text-decoration: underline;
+}
+
+/* Header & Nav */
+header {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding-top: 20px;
+    border-bottom: 1px solid #333; /* Subtle separator */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+
+.site-title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #bbb;
+    font-size: 0.95rem;
+}
+
+.nav-links li a:hover {
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Responsive: Side-by-side on larger screens */
+@media (min-width: 600px) {
+    .intro {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.profile-image {
+    flex: 0 0 200px;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 8px; /* Slightly rounded corners */
+    border: 2px solid #333;
+}
+
+.caption {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+.bio {
+    flex: 1;
+}
+
+.bio p {
+    margin-bottom: 1.2rem;
+}
+
+/* Footer */
+footer {
+    max-width: 800px;
+    margin: 50px auto 0 auto;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+}
